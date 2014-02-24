@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+
+	<LinearLayout android:id="@+id/LinearLayout01"
+	    android:layout_gravity="center_horizontal"
+		android:layout_width="fill_parent" android:layout_height="wrap_content">
+
+		<TextView
+		    android:id="@+id/TextView01"
+		    android:layout_width="200dip"
+		    android:layout_height="fill_parent"
+		    android:text="PhoneBluetooth Toggle" />
+
+		<Switch android:layout_height="fill_parent" 
+		    android:layout_width="fill_parent" 
+		    android:textOn="启用"
+		    android:textOff="禁用"
+		    android:id="@+id/tbtnSwitch"/>
+		
+		
+	</LinearLayout>
+	<LinearLayout android:id="@+id/LinearLayout02"
+		android:layout_width="fill_parent" android:layout_height="wrap_content">
+		<Button android:layout_height="wrap_content" android:id="@+id/btnSearch"
+			android:text="Search Bluetooth Device" android:layout_width="fill_parent"></Button>
+	</LinearLayout>
+
+
+	<ListView android:layout_width="fill_parent" android:id="@+id/lvDevices"
+		android:layout_height="fill_parent">
+	</ListView>
+
+</LinearLayout>
